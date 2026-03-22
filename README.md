@@ -1,6 +1,6 @@
-# 🚗 Multilevel Parking Lot System – Design & Implementation
+# Multilevel Parking Lot System – Design & Implementation
 
-## 📌 Overview
+## Overview
 
 This project implements a **Multilevel Parking Lot System** using clean object-oriented design principles and industry-standard patterns.
 
@@ -16,17 +16,17 @@ It supports:
 
 ---
 
-# 🧠 Design Goals
+# Design Goals
 
-* ✅ Scalability (multiple levels & gates)
-* ✅ Extensibility (new slot types, pricing, strategies)
-* ✅ Performance (O(log n) slot allocation)
-* ✅ Thread Safety (no double allocation)
-* ✅ Clean architecture (SOLID principles)
+* Scalability (multiple levels & gates)
+* Extensibility (new slot types, pricing, strategies)
+* Performance (O(log n) slot allocation)
+* Thread Safety (no double allocation)
+* Clean architecture (SOLID principles)
 
 ---
 
-# 🧩 Core Components
+# Core Components
 
 ## 1. ParkingLot
 
@@ -141,11 +141,11 @@ It supports:
 
 ---
 
-# ⚙️ Key Design Decisions
+# Key Design Decisions
 
 ---
 
-## ✅ 1. TreeSet for Optimization
+## 1. TreeSet for Optimization
 
 * Each level maintains slots in a **TreeSet sorted by distance**
 * Complexity:
@@ -156,7 +156,7 @@ It supports:
 
 ---
 
-## ✅ 2. Slot-Level Locking (Concurrency)
+## 2. Slot-Level Locking (Concurrency)
 
 * Each slot has its own lock
 * Ensures:
@@ -166,31 +166,31 @@ It supports:
 
 ---
 
-## ✅ 3. Strategy Pattern
+## 3. Strategy Pattern
 
 Used for:
 
 * Slot allocation
 * Pricing
 
-👉 Enables:
+Enables:
 
 * Easy extension
 * No modification of existing code
 
 ---
 
-## ✅ 4. Factory Pattern
+## 4. Factory Pattern
 
 Used for:
 
 * Ticket creation
 
-👉 Keeps creation logic separate and clean
+Keeps creation logic separate and clean
 
 ---
 
-# 🧱 UML Class Diagram
+# UML Class Diagram
 
 ```
 +---------------------+
@@ -279,11 +279,11 @@ Used for:
 
 ---
 
-# 🔄 System Flow
+# System Flow
 
 ---
 
-## 🚗 Parking Flow
+## Parking Flow
 
 ```
 User → ParkingLot.park(vehicle, gateId)
@@ -297,7 +297,7 @@ User → ParkingLot.park(vehicle, gateId)
 
 ---
 
-## 🚗 Exit Flow
+## Exit Flow
 
 ```
 User → ParkingLot.exit(ticket)
@@ -308,9 +308,9 @@ User → ParkingLot.exit(ticket)
 ```
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
-## 🛠 Compilation and Execution
+## Compilation and Execution
 
 To compile and run the `Main.java` class, open your terminal, navigate to the directory containing the `MultiLevel_Parking_Lot` folder, and execute the following commands:
 
